@@ -22,16 +22,29 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Color.fromRGBO(238, 243, 253, 1),
+          backgroundColor: Color.fromRGBO(238, 243, 253, 0.5),
           leading: Image(
             image: AssetImage('assets/drawer.png'),
-            width: 50,
-            height: 50,
           ),
           actions: [
-            IconButton(onPressed: () {}, icon: (Icon(Icons.message_outlined))),
-            IconButton(
-                onPressed: () {}, icon: Icon(Icons.notifications_outlined))
+            Image(
+              image: AssetImage('assets/Vector.png'),
+              width: 30,
+              height: 30,
+              fit: BoxFit.cover,
+            ),
+            SizedBox(
+              width: 16,
+            ),
+            Image(
+              image: AssetImage('assets/Notification.png'),
+              width: 30,
+              height: 30,
+              fit: BoxFit.cover,
+            ),
+            SizedBox(
+              width: 16,
+            ),
           ],
         ),
         body: SingleChildScrollView(
@@ -40,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 alignment: Alignment.centerLeft,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(238, 243, 253, 1),
+                  color: Color.fromRGBO(238, 243, 253, 0.5),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Column(
@@ -75,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(238, 243, 253, 1),
+                  color: Color.fromRGBO(238, 243, 253, 0.5),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 20),
                 child: Row(
